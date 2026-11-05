@@ -10,7 +10,7 @@ Pet profiles, species, breed, age, weight, vaccination records, saved trips, dat
 
 ## Hotel searches and maps
 
-Hotel searches and maps require internet access. When you search a destination, the text is sent to your device’s Android geocoding provider. Hotel searches send the searched coordinates to OpenStreetMap Overpass services, using `overpass-api.de` with `overpass.kumi.systems` as a fallback. Viewing a map requests map tiles from OpenStreetMap using bundled Leaflet code.
+Hotel searches and maps require internet access. When you search a destination, the text is sent to your device’s Android geocoding provider. Hotel searches send the searched coordinates to Overpass providers: Private.coffee (`overpass.private.coffee`, formerly `overpass.kumi.systems`) and `overpass-api.de`. Android version 1.0.1 uses Private.coffee as the primary provider and overpass-api.de as fallback; version 1.0 used overpass-api.de with the legacy Kumi address as fallback. Viewing a map requests map tiles from OpenStreetMap using bundled Leaflet code.
 
 These providers receive information needed to answer the request, along with network information such as your IP address. They process it under their own policies. The developer does not control their logs or retention. The app does not save a location-search history. Provider processing is not represented as anonymous or ephemeral.
 
